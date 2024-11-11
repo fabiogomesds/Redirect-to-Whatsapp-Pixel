@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page with WhatsApp button</title>
+
+</head>
+
+<body>
+
+</body>
+<script>
+// Cria a div do ícone de WhatsApp
+var whatsappIcon = document.createElement('div');
+whatsappIcon.style.position = 'fixed';
+whatsappIcon.style.left = '10px';
+whatsappIcon.style.bottom = '65px';
+whatsappIcon.style.zIndex = '1000';
+whatsappIcon.style.backgroundColor = '#25d366';
+whatsappIcon.style.borderRadius = '50%';
+whatsappIcon.style.width = '60px';
+whatsappIcon.style.height = '60px';
+whatsappIcon.style.display = 'flex';
+whatsappIcon.style.alignItems = 'center';
+whatsappIcon.style.justifyContent = 'center';
+whatsappIcon.style.cursor = 'pointer';
+whatsappIcon.style.boxShadow = '0px 4px 8px rgba(0, 0, 0, 0.3)';
+
+// Adiciona o link do WhatsApp
+whatsappIcon.onclick = function() {
+    window.open('https://yourdomain.com.br/whatsapp/?phone=5531983347919&text=Vi+os+planos+no+site%2C+pode+me+dar+mais+informa%C3%A7%C3%B5es%3F%2A', '_blank');
+}
+
+// Adiciona o ícone do WhatsApp
+var whatsappImg = document.createElement('img');
+whatsappImg.src = 'https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg';
+whatsappImg.alt = 'Ícone do WhatsApp';
+whatsappImg.style.width = '50px';
+whatsappImg.style.height = '50px';
+
+// Insere o ícone na div
+whatsappIcon.appendChild(whatsappImg);
+
+// Adiciona a div ao body
+document.body.appendChild(whatsappIcon);
+
+</script>
+</html>
